@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f3efff">
+  <meta name="robots" content="noindex, nofollow">
+  <title>appology</title>
+  <link rel="stylesheet" href="./styles.css">
+  <script src="./app.js" defer></script>
+</head>
+<body>
+  <header class="site-header frame">
+    <div class="wordmark"><span class="wordmark-icon" aria-hidden="true"><span class="heart"></span></span>appology</div>
+    <ol class="progress" aria-label="progress">
+      <li aria-current="step"><span class="sr-only">intro</span></li>
+      <li><span class="sr-only">anger slider</span></li>
+      <li><span class="sr-only">apology</span></li>
+      <li><span class="sr-only">ending</span></li>
+    </ol>
+  </header>
+
+  <main class="main">
+    <h1 class="sr-only">appology for hadia</h1>
+
+    <section class="stage stage-intro" data-stage="intro" aria-labelledby="intro-title">
+      <div class="letter-art" aria-hidden="true">
+        <div class="art-shadow"></div>
+        <div class="envelope">
+          <div class="envelope-back"></div>
+          <div class="note">
+            <span class="heart"></span>
+            <span class="note-lines"></span>
+          </div>
+          <div class="envelope-front">
+            <span class="envelope-fold"></span>
+            <span class="seal"><span class="heart"></span></span>
+          </div>
+        </div>
+        <span class="spark spark-gold"></span>
+        <span class="spark spark-purple"></span>
+        <span class="spark spark-small"></span>
+        <span class="art-ring"></span>
+      </div>
+      <h2 class="title" id="intro-title" tabindex="-1">proceed only if<br><span class="accent underlined">you are hadia.</span></h2>
+      <button class="button" id="proceed" type="button">im hadia <span class="arrow" aria-hidden="true"></span></button>
+    </section>
+
+    <section class="stage stage-meter" data-stage="meter" aria-labelledby="meter-title" hidden>
+      <h2 class="title title-meter" id="meter-title" tabindex="-1">how badly did rafay<br><span class="accent">fuck up this time?</span></h2>
+      <div class="meter">
+        <output class="meter-value" id="anger-value" for="anger" aria-hidden="true">0<span>%</span></output>
+        <div class="meter-control" id="meter-control">
+          <div class="meter-track" aria-hidden="true">
+            <div class="face-position">
+              <div class="face" id="face" data-expression="calm">
+                <span class="brow brow-left"></span>
+                <span class="brow brow-right"></span>
+                <span class="eye eye-left"></span>
+                <span class="eye eye-right"></span>
+                <span class="mouth"></span>
+                <span class="steam steam-left"></span>
+                <span class="steam steam-right"></span>
+              </div>
+            </div>
+          </div>
+          <input id="anger" type="range" min="0" max="100" value="0" aria-labelledby="meter-title">
+        </div>
+        <div class="meter-labels" aria-hidden="true"><span>a lil</span><span>bohat zyada</span></div>
+      </div>
+      <button class="button" id="apologize" type="button">go on <span class="arrow" aria-hidden="true"></span></button>
+    </section>
+
+    <section class="stage stage-apology" data-stage="apology" aria-labelledby="apology-title" hidden>
+      <div class="apology-cloud" id="apology-cloud" aria-hidden="true"></div>
+      <h2 class="title apology-title" id="apology-title" tabindex="-1" aria-describedby="apology-words">im <span class="accent">sorryyyy</span></h2>
+      <p class="sr-only" id="apology-words">im so sorry pls forgive me. ainda nae kroonga.</p>
+      <button class="text-button skip-button" id="skip" type="button">okay enough <span class="arrow" aria-hidden="true"></span></button>
+    </section>
+
+    <section class="stage stage-ending" data-stage="ending" aria-labelledby="ending-title" hidden>
+      <div class="ending-art" aria-hidden="true">
+        <div class="heart ending-heart"></div>
+        <span class="spark spark-gold"></span>
+        <span class="spark spark-purple"></span>
+        <span class="spark spark-small"></span>
+      </div>
+      <h2 class="title title-ending" id="ending-title" tabindex="-1">until the next time<br><span class="accent underlined">i piss u off.</span></h2>
+      <button class="text-button" id="replay" type="button"><span class="replay-icon" aria-hidden="true">↺</span> again?</button>
+    </section>
+  </main>
+
+  <footer class="site-footer frame">
+    <span>an <strong>r4tech</strong> project</span>
+    <span>made specifically and only for hadia <span class="footer-heart" aria-hidden="true">♡</span></span>
+  </footer>
+</body>
+</html>
